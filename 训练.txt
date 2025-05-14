@@ -1,0 +1,4 @@
+
+
+
+yolo detect train data=/root/autodl-tmp/yolov10/datasets/coco.yaml model=/root/autodl-tmp/yolov10/yolov10s.yaml epochs=300 batch=16 imgsz=640 device=0
