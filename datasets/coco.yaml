@@ -1,0 +1,40 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco/
+# Example usage: yolo train data=coco128.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: ./own_datas  # dataset root dir
+train: /root/autodl-tmp/yolov10/datasets/cocoNEUyolo/images/train2017  # train images (relative to 'path') 128 images
+val: /root/autodl-tmp/yolov10/datasets/cocoNEUyolo/images/val2017  # val images (relative to 'path') 128 images
+#test: /root/yolov5/VOCData_2/dataSet_path/test.txt  # test images (optional)
+
+#nc: 3  # number of classes
+#names: ['crack','pit','spray']  # class names
+# Classes
+#names:  # Rear-view mirror
+#  0: crack
+#  1: pit
+#  2: spray
+
+names:   # NEU
+  0: crazing
+  1: inclusion
+  2: patches
+  3: pitted_surface
+  4: rolled-in_scale
+  5: scratches
+
+#names:   # Optics
+#  0: linear scratch
+#  1: special scratch
+#  2: pit
+#  3: contaminant
+
+# Download script/URL (optional)
+#download: https://ultralytics.com/assets/coco128.zip
